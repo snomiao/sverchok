@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shortcuts &mdash; Sverchok 1, 0, 1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Shortcuts &mdash; Sverchok 1, 2, 0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="../_static/sverchock_icon_b.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/documentation_options.js?v=773c2105"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Node tree evaluation system" href="../tree_evaluation_system.html" />
-    <link rel="prev" title="Output Socket Menus" href="socket_menus.html" /> 
+    <link rel="prev" title="Node Shields" href="node_shields.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -28,15 +29,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../main.html" class="icon icon-home"> Sverchok
-            <img src="../_static/title_big_b.svg" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../main.html" class="icon icon-home">
+            Sverchok
+              <img src="../_static/title_big_b.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                1, 0, 1
+                1, 2, 0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -49,6 +54,7 @@
 <li class="toctree-l2"><a class="reference internal" href="panels.html">All panels</a></li>
 <li class="toctree-l2"><a class="reference internal" href="input_menus.html">Input socket menus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="socket_menus.html">Output socket menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="node_shields.html">Node Shields</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Shortcuts</a></li>
 </ul>
 </li>
@@ -56,6 +62,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../data_structure/data_structure_index.html">Data structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nodes.html">Nodes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/celling.html">Celling design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing/contributing_to_sverchok.html">Contributing to sverchok</a></li>
 </ul>
 
@@ -72,9 +79,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../main.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="user_interface.html">User interface</a> &raquo;</li>
-      <li>Shortcuts</li>
+      <li><a href="../main.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="user_interface.html">User interface</a></li>
+      <li class="breadcrumb-item active">Shortcuts</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/user_interface/shortcuts.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -85,7 +92,7 @@
            <div itemprop="articleBody">
              
   <section id="shortcuts">
-<h1>Shortcuts<a class="headerlink" href="#shortcuts" title="Permalink to this headline">¶</a></h1>
+<h1>Shortcuts<a class="headerlink" href="#shortcuts" title="Link to this heading">¶</a></h1>
 <p>This is a collection of shortcuts useful in the Sverchok node tree, some are Blenders defaults and some are customized for Sverchok use.</p>
 <p><strong>G</strong> - Move selected nodes.</p>
 <p><strong>Shift + A</strong> - Add node menu</p>
@@ -117,7 +124,6 @@
 <img alt="https://user-images.githubusercontent.com/10011941/78453089-ceca8080-768f-11ea-8726-d2c2ffaa5cb4.gif" src="https://user-images.githubusercontent.com/10011941/78453089-ceca8080-768f-11ea-8726-d2c2ffaa5cb4.gif" />
 <p><strong>Ctrl + Shit + Click</strong> -  Connects a temporal Viewer to the active node. If the node produces visible geometry it will connect a Viewer Draw Node if not a Stethoscope node. (Cuts the links first).</p>
 <img alt="https://user-images.githubusercontent.com/10011941/78453090-d4c06180-768f-11ea-8631-422fe63f994e.gif" src="https://user-images.githubusercontent.com/10011941/78453090-d4c06180-768f-11ea-8631-422fe63f994e.gif" />
-<p><strong>Ctrl + Shift + F5</strong> in 3D View window - Enables/Disables “Live Update” mode</p>
 <p><strong>F6</strong> - Enables/Disables the processing of the current node-tree</p>
 <p><strong>F7</strong> - Enables/Disables the Draft mode of the current node-tree</p>
 <p><strong>L</strong> - Select Nodes that link to the previously selected nodes</p>
@@ -125,21 +131,23 @@
 <p><strong>Shift + Right Click</strong> - Add Re-route</p>
 <p><strong>Ctrl + Right Click</strong> - Cut Links</p>
 <p><strong>Right Click</strong> - Access to Sverchok Right Click Menu</p>
-<p><strong>Shift + P</strong> on a node in Node Editor - open Load / Save Preset menu for this node.</p>
+<p><strong>Shift + P</strong> - on a node in Node Editor - open Load / Save Preset menu for this node</p>
+<p><strong>Ctrl+Z</strong> - Zoom to selected node and vice versa</p>
+<p><strong>Ctrl+Shift+H</strong> - Show/Hide Toggle for selected Viewer Draw node</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="socket_menus.html" class="btn btn-neutral float-left" title="Output Socket Menus" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="node_shields.html" class="btn btn-neutral float-left" title="Node Shields" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../tree_evaluation_system.html" class="btn btn-neutral float-right" title="Node tree evaluation system" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2014...2022, sverchok team.</p>
+    <p>&#169; Copyright 2014...2024, sverchok team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

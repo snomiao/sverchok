@@ -1,6 +1,9 @@
 Wave Painter
 ============
 
+.. image:: https://user-images.githubusercontent.com/14288520/197003680-9e86c41c-cbce-4bca-970d-8e9808a164e3.png
+  :target: https://user-images.githubusercontent.com/14288520/197003680-9e86c41c-cbce-4bca-970d-8e9808a164e3.png
+
 Functionality
 -------------
 
@@ -50,7 +53,7 @@ This node has the following parameters:
 - **Neighbour faces**. Visible only if **Mode** parameter is set to **Faces**. This defines which faces are considered to be neighbour. The available modes are:
 
     - **By Edge**. Faces that share an edge are considered to be neighbour.
-    - **By Vertex**. Faces that share a vertex are considered to be neigbhour.
+    - **By Vertex**. Faces that share a vertex are considered to be neighbour.
 
 Outputs
 -------
@@ -61,7 +64,8 @@ This node has the following outputs:
   number of steps which should be taken from initially selected faces
   (vertices), to take to this face (vertex), starting from 1 for initially
   selected faces. In other words, this is the number of the wave front. This
-  output will contain 0 for obstacle faces / vertices.
+  output will contain 0 for obstacle faces / vertices and -1 if faces /
+  vertices are unreachable from selected elements.
 - **WaveDistance**. For each face (or vertex) of the mesh, this contains the
   length of the shortest path from initially selected faces (vertices) to this
   face (vertex). The path is considered to be consisting of single steps from
@@ -69,7 +73,8 @@ This node has the following outputs:
   neighbour vertices is the Euclidean distance between such vertices. The
   length of step between neighbour faces is calculated as Euclidean distance
   between the centers of such faces. This input will contain 0 for initially
-  selected faces as well as for obstacle faces.
+  selected faces as well as for obstacle faces and -1 for elements which are
+  unreachable from selected ones.
 - **StartIdx**. For each face (or vertex) of the mesh, this contains the index
   of one of initially selected faces / vertices, which is the nearest from this
   face / vertex, in terms of the shortest path described above.
@@ -79,7 +84,18 @@ Examples of usage
 
 Start a wave from some small area on the hexagonal grid; mark some vertices as obstacles. Note how the wave can not pass through the obstacle and has to go the long way around:
 
-.. image:: https://user-images.githubusercontent.com/284644/71737930-e9197600-2e76-11ea-9382-02f07d6fe0e2.png
+.. image:: https://user-images.githubusercontent.com/14288520/197005643-c639ff50-1da5-4df9-8fd7-f71c47a2a084.png
+  :target: https://user-images.githubusercontent.com/14288520/197005643-c639ff50-1da5-4df9-8fd7-f71c47a2a084.png
+
+* Generator->Generator Extended-> :doc:`Polygon Grid </nodes/generators_extended/polygon_grid>`
+* Analyzers-> :doc:`Select Mesh Elements </nodes/analyzer/mesh_select_mk2>`
+* Number-> :doc:`Map Range </nodes/number/range_map>`
+* List->List Main-> :doc:`List Math </nodes/list_main/func>`
+* List-> :doc:`List Mask (Out) </nodes/list_masks/mask>`
+* Color-> :doc:`Color In </nodes/color/color_in_mk1>`
+* Viz-> :doc:`Mesh Viewer </nodes/viz/mesh_viewer>`
+
+---------
 
 Similar setup with a rectangular grid; use wave front number to select faces to be extruded:
 

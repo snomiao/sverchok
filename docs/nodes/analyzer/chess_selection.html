@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chess selection &mdash; Sverchok 1, 0, 1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <title>Chess Selection &mdash; Sverchok 1, 2, 0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="../../_static/sverchock_icon_b.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/documentation_options.js?v=773c2105"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Wave Painter" href="wave_paint.html" />
-    <link rel="prev" title="Image Decomposer" href="image_components.html" /> 
+    <link rel="next" title="Circle Fit" href="circle_approx.html" />
+    <link rel="prev" title="Overlap Polygons" href="bvh_overlap_polys.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -28,15 +29,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../main.html" class="icon icon-home"> Sverchok
-            <img src="../../_static/title_big_b.svg" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../main.html" class="icon icon-home">
+            Sverchok
+              <img src="../../_static/title_big_b.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                1, 0, 1
+                1, 2, 0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -59,37 +64,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../transforms/transforms_index.html">Transforms</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="analyzer_index.html">Analyzers</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="area.html">Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bbox_aligned.html">Aligned Bounding Box (Alpha)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bbox_mk3.html">Bounding Box</a></li>
-<li class="toctree-l3"><a class="reference internal" href="component_analyzer.html">Component Analyzer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="diameter.html">Diameter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="distance_pp.html">Distance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="distance_point_line.html">Distance Point Line</a></li>
-<li class="toctree-l3"><a class="reference internal" href="distance_point_plane.html">Distance Point Plane</a></li>
-<li class="toctree-l3"><a class="reference internal" href="distance_line_line.html">Distance Line Line</a></li>
-<li class="toctree-l3"><a class="reference internal" href="deformation.html">Deformation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="edge_angles.html">Angles at the Edges</a></li>
-<li class="toctree-l3"><a class="reference internal" href="intersect_line_sphere.html">Compass 3D</a></li>
-<li class="toctree-l3"><a class="reference internal" href="intersect_circle_circle.html">Circle Intersection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="intersect_plane_plane.html">Plane Intersection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="kd_tree_MK2.html">KDT Closest Verts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="kd_tree_edges_mk2.html">KDT Closest Edges</a></li>
-<li class="toctree-l3"><a class="reference internal" href="kd_tree_path.html">KDT Closest Path</a></li>
-<li class="toctree-l3"><a class="reference internal" href="linked_verts.html">Linked Verts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mesh_filter.html">Mesh Filter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mesh_select_mk2.html">Select mesh elements by location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="select_similar.html">Select similar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="proportional.html">Proportional Edit Falloff</a></li>
-<li class="toctree-l3"><a class="reference internal" href="normals_mk2.html">Calculate Normals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="nearest_point_on_mesh.html">Nearest Point on Mesh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bvh_overlap_polys.html">Overlap Polygons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="object_insolation.html">Insolation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="path_length_2.html">Path Length</a></li>
-<li class="toctree-l3"><a class="reference internal" href="points_inside_mesh.html">Points Inside Mesh</a></li>
-<li class="toctree-l3"><a class="reference internal" href="project_point_to_line.html">Project points to line</a></li>
-<li class="toctree-l3"><a class="reference internal" href="volume.html">Volume</a></li>
-<li class="toctree-l3"><a class="reference internal" href="raycaster_lite.html">Raycast</a></li>
-<li class="toctree-l3"><a class="reference internal" href="image_components.html">Image Decomposer</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Chess selection</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chess Selection</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#functionality">Functionality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#category">Category</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inputs">Inputs</a></li>
@@ -97,13 +75,42 @@
 <li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="wave_paint.html">Wave Painter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="origins.html">Origins</a></li>
-<li class="toctree-l3"><a class="reference internal" href="linear_approx.html">Linear Approximation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="circle_approx.html">Circle Fit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sphere_approx.html">Sphere Fit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component_analyzer.html">Component Analyzer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="deformation.html">Deformation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="diameter.html">Diameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="distance_line_line.html">Distance Line Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="distance_point_line.html">Distance Point Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="distance_point_plane.html">Distance Point Plane</a></li>
+<li class="toctree-l3"><a class="reference internal" href="distance_pp.html">Distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edge_angles.html">Angles at the Edges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image_components.html">Image Decomposer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="inscribed_circle.html">Inscribed Circle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intersect_circle_circle.html">Circle Intersection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intersect_line_sphere.html">Compass 3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="intersect_plane_plane.html">Plane Intersection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kd_tree_MK2.html">KDT Closest Verts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kd_tree_edges.html">KDT Closest Edges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kd_tree_path.html">KDT Closest Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linear_approx.html">Linear Approximation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linked_verts.html">Linked Verts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_filter.html">Mesh Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_select_mk2.html">Select Mesh Elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nearest_point_on_mesh.html">Nearest Point on Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="normals_mk2.html">Calculate Normals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="object_insolation.html">Insolation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="origins.html">Origins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="path_length_2.html">Path Length</a></li>
+<li class="toctree-l3"><a class="reference internal" href="points_inside_mesh.html">Points Inside Mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="project_point_to_line.html">Project Points to Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="proportional.html">Proportional Edit Falloff</a></li>
+<li class="toctree-l3"><a class="reference internal" href="raycaster_lite.html">Raycaster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="select_similar.html">Select Similar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphere_approx.html">Sphere Fit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="steiner_ellipse.html">Steiner Ellipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="volume.html">Volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wave_paint.html">Wave Painter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="weighted_vector_sum.html">Center of Mass (Mesh) (Alpha)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../modifier_change/modifier_change_index.html">Modifier Change</a></li>
@@ -133,6 +140,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/celling.html">Celling design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributing/contributing_to_sverchok.html">Contributing to sverchok</a></li>
 </ul>
 
@@ -149,10 +157,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../main.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../nodes.html">Nodes</a> &raquo;</li>
-          <li><a href="analyzer_index.html">Analyzers</a> &raquo;</li>
-      <li>Chess selection</li>
+      <li><a href="../../main.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../nodes.html">Nodes</a></li>
+          <li class="breadcrumb-item"><a href="analyzer_index.html">Analyzers</a></li>
+      <li class="breadcrumb-item active">Chess Selection</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/nodes/analyzer/chess_selection.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -163,34 +171,46 @@
            <div itemprop="articleBody">
              
   <section id="chess-selection">
-<h1>Chess selection<a class="headerlink" href="#chess-selection" title="Permalink to this headline">¶</a></h1>
-<img alt="https://user-images.githubusercontent.com/28003269/70528861-9f37bb80-1b68-11ea-9f23-6e7a76ec779b.png" src="https://user-images.githubusercontent.com/28003269/70528861-9f37bb80-1b68-11ea-9f23-6e7a76ec779b.png" />
+<h1>Chess Selection<a class="headerlink" href="#chess-selection" title="Link to this heading">¶</a></h1>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/197345091-2d118715-4268-4253-8dff-b14439f04634.png"><img alt="https://user-images.githubusercontent.com/14288520/197345091-2d118715-4268-4253-8dff-b14439f04634.png" src="https://user-images.githubusercontent.com/14288520/197345091-2d118715-4268-4253-8dff-b14439f04634.png" /></a>
 <section id="functionality">
-<h2>Functionality<a class="headerlink" href="#functionality" title="Permalink to this headline">¶</a></h2>
+<h2>Functionality<a class="headerlink" href="#functionality" title="Link to this heading">¶</a></h2>
 <p>The node creates face selection mask with pattern like chess board.</p>
-<img alt="https://user-images.githubusercontent.com/28003269/70528961-dc9c4900-1b68-11ea-9d3a-b8036f7f2649.png" src="https://user-images.githubusercontent.com/28003269/70528961-dc9c4900-1b68-11ea-9d3a-b8036f7f2649.png" />
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/197345375-154e0819-e26f-4b83-8308-d51cbf5046fa.png"><img alt="https://user-images.githubusercontent.com/14288520/197345375-154e0819-e26f-4b83-8308-d51cbf5046fa.png" src="https://user-images.githubusercontent.com/14288520/197345375-154e0819-e26f-4b83-8308-d51cbf5046fa.png" /></a>
 </section>
 <section id="category">
-<h2>Category<a class="headerlink" href="#category" title="Permalink to this headline">¶</a></h2>
-<p>Analysers -&gt; Chess selection</p>
+<h2>Category<a class="headerlink" href="#category" title="Link to this heading">¶</a></h2>
+<p>Analysers -&gt; Chess Selection</p>
 </section>
 <section id="inputs">
-<h2>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Vertices</strong> - vertices of base mesh</p></li>
 <li><p><strong>Faces</strong> - faces of base mesh</p></li>
 </ul>
 </section>
 <section id="outputs">
-<h2>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>Face mask</strong> - list of True or False per give faces for usage with other nodes</p></li>
 </ul>
 </section>
 <section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/197347215-0d47659c-26e8-4f75-bb27-3775c4e104d8.png"><img alt="https://user-images.githubusercontent.com/14288520/197347215-0d47659c-26e8-4f75-bb27-3775c4e104d8.png" src="https://user-images.githubusercontent.com/14288520/197347215-0d47659c-26e8-4f75-bb27-3775c4e104d8.png" /></a>
+<ul class="simple">
+<li><p>Generator-&gt; <a class="reference internal" href="../generator/plane_mk3.html"><span class="doc">Plane</span></a></p></li>
+<li><p>List-&gt; <a class="reference internal" href="../list_masks/mask.html"><span class="doc">List Mask (Out)</span></a></p></li>
+<li><p>Viz-&gt; <a class="reference internal" href="../viz/viewer_draw_mk4.html"><span class="doc">Viewer Draw</span></a></p></li>
+</ul>
+<hr class="docutils" />
 <p>Can be used with 3D primitives.</p>
-<img alt="https://user-images.githubusercontent.com/28003269/70521681-11080900-1b59-11ea-9a86-cfe5585a14c2.png" src="https://user-images.githubusercontent.com/28003269/70521681-11080900-1b59-11ea-9a86-cfe5585a14c2.png" />
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/197347851-2cd64f57-b7f4-49ad-93ac-6f8328dd6dd5.png"><img alt="https://user-images.githubusercontent.com/14288520/197347851-2cd64f57-b7f4-49ad-93ac-6f8328dd6dd5.png" src="https://user-images.githubusercontent.com/14288520/197347851-2cd64f57-b7f4-49ad-93ac-6f8328dd6dd5.png" /></a>
+<ul class="simple">
+<li><p>Generator-&gt; <a class="reference internal" href="../generator/icosphere.html"><span class="doc">IcoSphere</span></a></p></li>
+<li><p>List-&gt; <a class="reference internal" href="../list_masks/mask.html"><span class="doc">List Mask (Out)</span></a></p></li>
+<li><p>Viz-&gt; <a class="reference internal" href="../viz/viewer_draw_mk4.html"><span class="doc">Viewer Draw</span></a></p></li>
+</ul>
 </section>
 </section>
 
@@ -198,14 +218,14 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="image_components.html" class="btn btn-neutral float-left" title="Image Decomposer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="wave_paint.html" class="btn btn-neutral float-right" title="Wave Painter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="bvh_overlap_polys.html" class="btn btn-neutral float-left" title="Overlap Polygons" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="circle_approx.html" class="btn btn-neutral float-right" title="Circle Fit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2014...2022, sverchok team.</p>
+    <p>&#169; Copyright 2014...2024, sverchok team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -1,5 +1,8 @@
-FCurve In
-=========
+FCurve Input
+============
+
+.. image:: https://github.com/nortikin/sverchok/assets/14288520/00a149e1-d2c4-449a-9846-992aa18ceba3
+  :target: https://github.com/nortikin/sverchok/assets/14288520/00a149e1-d2c4-449a-9846-992aa18ceba3
 
 This node give you access to the FCurves bound to scene objects. 
 
@@ -27,7 +30,7 @@ you picked for the other property index on the node will be invalidated. ( i thi
 
 
 None of that made sense?
-========================
+------------------------
 
 OK, best you can do is look at the issue tracker examples associated with the first pullrequest for this node:
 

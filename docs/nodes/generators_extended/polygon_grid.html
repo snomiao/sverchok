@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Polygonal Grid &mdash; Sverchok 1, 0, 1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <title>Polygon Grid &mdash; Sverchok 1, 2, 0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="../../_static/sverchock_icon_b.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/documentation_options.js?v=773c2105"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -28,15 +29,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../main.html" class="icon icon-home"> Sverchok
-            <img src="../../_static/title_big_b.svg" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../main.html" class="icon icon-home">
+            Sverchok
+              <img src="../../_static/title_big_b.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                1, 0, 1
+                1, 2, 0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -52,11 +57,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../generator/generator_index.html">Generators</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="generators_extended_index.html">Generators Extended</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="box_rounded.html">Rounded box</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conic_section.html">Conic Sections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ellipse_mk3.html">Ellipse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hilbert.html">Hilbert 2D</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hilbert3d.html">Hilbert 3D</a></li>
-<li class="toctree-l3"><a class="reference internal" href="hilbert_image.html">Hilbert 3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hilbert_image.html">Hilbert Image</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pentagon_tiler.html">Pentagon Tiler</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Polygonal Grid</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Polygon Grid</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#functionality">Functionality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inputs">Inputs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
@@ -67,11 +74,9 @@
 <li class="toctree-l3"><a class="reference internal" href="regular_solid.html">Regular Solid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ring_mk2.html">Ring</a></li>
 <li class="toctree-l3"><a class="reference internal" href="smooth_lines.html">Smooth Lines</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ellipse_mk3.html">Ellipse</a></li>
-<li class="toctree-l3"><a class="reference internal" href="torus_knot_mk2.html">Torus Knot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="conic_section.html">Conic Sections</a></li>
-<li class="toctree-l3"><a class="reference internal" href="super_ellipsoid.html">Super Ellipsoid</a></li>
 <li class="toctree-l3"><a class="reference internal" href="spiral_mk2.html">Spiral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="super_ellipsoid.html">Super Ellipsoid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torus_knot_mk2.html">Torus Knot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="triangle.html">Triangle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="wfc_texture.html">WFC Texture</a></li>
 </ul>
@@ -110,6 +115,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/celling.html">Celling design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributing/contributing_to_sverchok.html">Contributing to sverchok</a></li>
 </ul>
 
@@ -126,10 +132,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../main.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../nodes.html">Nodes</a> &raquo;</li>
-          <li><a href="generators_extended_index.html">Generators Extended</a> &raquo;</li>
-      <li>Polygonal Grid</li>
+      <li><a href="../../main.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../nodes.html">Nodes</a></li>
+          <li class="breadcrumb-item"><a href="generators_extended_index.html">Generators Extended</a></li>
+      <li class="breadcrumb-item active">Polygon Grid</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/nodes/generators_extended/polygon_grid.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -139,15 +145,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="polygonal-grid">
-<h1>Polygonal Grid<a class="headerlink" href="#polygonal-grid" title="Permalink to this headline">¶</a></h1>
+  <section id="polygon-grid">
+<h1>Polygon Grid<a class="headerlink" href="#polygon-grid" title="Link to this heading">¶</a></h1>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/190913406-1af854d3-1898-4f56-984f-82d340d26d68.png"><img alt="https://user-images.githubusercontent.com/14288520/190913406-1af854d3-1898-4f56-984f-82d340d26d68.png" src="https://user-images.githubusercontent.com/14288520/190913406-1af854d3-1898-4f56-984f-82d340d26d68.png" /></a>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/190913412-56ff33af-d9b9-4050-9bc9-c365ead5523c.png"><img alt="https://user-images.githubusercontent.com/14288520/190913412-56ff33af-d9b9-4050-9bc9-c365ead5523c.png" src="https://user-images.githubusercontent.com/14288520/190913412-56ff33af-d9b9-4050-9bc9-c365ead5523c.png" /></a>
 <section id="functionality">
-<h2>Functionality<a class="headerlink" href="#functionality" title="Permalink to this headline">¶</a></h2>
-<p>The Polygonal Grid node creates a polygon array assambled to fill the plane. It can work with triangles, squares and hexagons</p>
+<h2>Functionality<a class="headerlink" href="#functionality" title="Link to this heading">¶</a></h2>
+<p>The Polygon Grid node creates a polygon array assambled to fill the plane. It can work with triangles, squares and hexagons</p>
 <p>The generated lattice points and tiles are confined to one of the selected layouts: rectangle, triangle, diamond and hexagon.</p>
 </section>
 <section id="inputs">
-<h2>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">¶</a></h2>
 <p>All inputs are vectorized and they will accept single or multiple values.</p>
 <ul class="simple">
 <li><p><strong>Size</strong></p></li>
@@ -157,12 +165,14 @@
 <li><p><strong>NumY</strong>   [1]</p></li>
 <li><p><strong>Level</strong>  [2]</p></li>
 </ul>
-<p>Notes:
-[1] : NumX, NumY are available for the <strong>rectangular</strong> layout type
-[2] : Level input is available for the <strong>triangle</strong>, <strong>diamond</strong> and <strong>hexagon</strong> layout types</p>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>[1] : NumX, NumY are available for the <strong>rectangular</strong> layout type</p></li>
+<li><p>[2] : Level input is available for the <strong>triangle</strong>, <strong>diamond</strong> and <strong>hexagon</strong> layout types</p></li>
+</ul>
 </section>
 <section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
 <p>The <strong>Type</strong> parameter allows to select the type of polygon: TRIANGLE, RECTANGLE and HEXAGON</p>
 <p>The <strong>Layout</strong> parameter allows to select one of the layout types: RECTANGLE, TRIANGLE, DIAMOND and HEXAGON. The lattice points and the hexagonal tiles will be generated to fit within one of these layouts.</p>
 <p>The <strong>Center</strong> parameter allows to center the grid around the origin.</p>
@@ -174,12 +184,6 @@
 - Scale is a float with value &gt;= 0.0
 - Level, NumX and NumY are integer with values &gt;= 1</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 10%" />
-<col style="width: 12%" />
-<col style="width: 62%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Param</p></th>
 <th class="head"><p>Type</p></th>
@@ -206,26 +210,28 @@
 <tr class="row-odd"><td><p><strong>NumX</strong></p></td>
 <td><p>Int</p></td>
 <td><p>7</p></td>
-<td><p>Number of points along X [1]</p></td>
+<td><p>Number of points along X <strong>[1]</strong></p></td>
 </tr>
 <tr class="row-even"><td><p><strong>NumY</strong></p></td>
 <td><p>Int</p></td>
 <td><p>6</p></td>
-<td><p>Number of points along Y [1]</p></td>
+<td><p>Number of points along Y <strong>[1]</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Level</strong></p></td>
 <td><p>Int</p></td>
 <td><p>3</p></td>
-<td><p>Number of levels around the center point [2]</p></td>
+<td><p>Number of levels around the center point <strong>[2]</strong></p></td>
 </tr>
 </tbody>
 </table>
-<p>Notes:
-[1] : NumX/NumY inputs are available for the RECTANGULAR layout type.
-[2] : Level input is available for the TRIANGLE, DIAMOND AND HEXAGON layout type.</p>
+<p>Notes:</p>
+<ul class="simple">
+<li><p><strong>[1]</strong> : NumX/NumY inputs are available for the RECTANGULAR layout type.</p></li>
+<li><p><strong>[2]</strong> : Level input is available for the TRIANGLE, DIAMOND AND HEXAGON layout type.</p></li>
+</ul>
 </section>
 <section id="outputs">
-<h2>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h2>
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">¶</a></h2>
 <p>Outputs will be generated when connected.</p>
 <p><strong>Centers</strong>
 These are the the centers of the tiles.</p>
@@ -236,9 +242,44 @@ These are the vertices, edges and polygons of the hexagonal tiles centered on th
 - If <strong>Separate</strong> is OFF (joined tiles) at <strong>scale</strong> = 1, when the tiles are tightly packed, the overlapping vertices will be merged.</p>
 </section>
 <section id="example-of-usage">
-<h2>Example of usage<a class="headerlink" href="#example-of-usage" title="Permalink to this headline">¶</a></h2>
-<img alt="https://user-images.githubusercontent.com/10011941/42779991-581204a4-8942-11e8-8339-19ef08408246.png" src="https://user-images.githubusercontent.com/10011941/42779991-581204a4-8942-11e8-8339-19ef08408246.png" />
-<img alt="https://user-images.githubusercontent.com/10011941/42779982-508f8026-8942-11e8-837e-a909fb784127.png" src="https://user-images.githubusercontent.com/10011941/42779982-508f8026-8942-11e8-837e-a909fb784127.png" />
+<h2>Example of usage<a class="headerlink" href="#example-of-usage" title="Link to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/190918987-8de0be58-047b-445e-9744-5bdbfd62b9c8.png"><img alt="https://user-images.githubusercontent.com/14288520/190918987-8de0be58-047b-445e-9744-5bdbfd62b9c8.png" src="https://user-images.githubusercontent.com/14288520/190918987-8de0be58-047b-445e-9744-5bdbfd62b9c8.png" /></a>
+<ul class="simple">
+<li><p>Matrix-&gt; <a class="reference internal" href="../matrix/matrix_in_mk4.html"><span class="doc">Matrix In</span></a></p></li>
+<li><p>Viz-&gt; <a class="reference internal" href="../viz/viewer_draw_mk4.html"><span class="doc">Viewer Draw</span></a></p></li>
+</ul>
+<hr class="docutils" />
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/190919106-e3ffb167-1f95-4909-a602-74c454f88571.png"><img alt="https://user-images.githubusercontent.com/14288520/190919106-e3ffb167-1f95-4909-a602-74c454f88571.png" src="https://user-images.githubusercontent.com/14288520/190919106-e3ffb167-1f95-4909-a602-74c454f88571.png" /></a>
+<ul class="simple">
+<li><p>Vector-&gt; <a class="reference internal" href="../vector/attractor.html"><span class="doc">Vector Attraction</span></a></p></li>
+<li><p>Transform-&gt; <a class="reference internal" href="../transforms/apply.html"><span class="doc">Matrix Apply (verts)</span></a></p></li>
+<li><p>Modifiers-&gt;Modifier Change-&gt; <a class="reference internal" href="../modifier_change/delete_loose.html"><span class="doc">Delete Loose</span></a></p></li>
+<li><p>Modifiers-&gt;Modifier Make-&gt; <a class="reference internal" href="../modifier_make/wireframe.html"><span class="doc">Wireframe</span></a></p></li>
+<li><p>Number-&gt; <a class="reference internal" href="../number/random_num_gen.html"><span class="doc">Random Num Gen</span></a></p></li>
+<li><p>ADD: Vector-&gt; <a class="reference internal" href="../vector/math_mk3.html"><span class="doc">Vector Math</span></a></p></li>
+<li><p>Matrix-&gt; <a class="reference internal" href="../matrix/matrix_in_mk4.html"><span class="doc">Matrix In</span></a></p></li>
+<li><p>List-&gt;List Main-&gt; <a class="reference internal" href="../list_main/length.html"><span class="doc">List Length</span></a></p></li>
+<li><p>List-&gt; <a class="reference internal" href="../list_masks/mask.html"><span class="doc">List Mask (Out)</span></a></p></li>
+<li><p>Viz-&gt; <a class="reference internal" href="../viz/viewer_draw_mk4.html"><span class="doc">Viewer Draw</span></a></p></li>
+<li><p>Viz-&gt; <a class="reference internal" href="../viz/viewer_2d.html"><span class="doc">Viewer 2D</span></a></p></li>
+</ul>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/190918897-10e98029-4367-4f44-895d-cab694f9b6b6.png"><img alt="https://user-images.githubusercontent.com/14288520/190918897-10e98029-4367-4f44-895d-cab694f9b6b6.png" src="https://user-images.githubusercontent.com/14288520/190918897-10e98029-4367-4f44-895d-cab694f9b6b6.png" /></a>
+<ul class="simple">
+<li><p>CAD-&gt; <a class="reference internal" href="../modifier_change/bevel.html"><span class="doc">Bevel</span></a></p></li>
+<li><p>Modifiers-&gt;Modifier Change-&gt; <a class="reference internal" href="../modifier_change/delete_loose.html"><span class="doc">Delete Loose</span></a></p></li>
+<li><p>Modifiers-&gt;Modifier Change-&gt; <a class="reference internal" href="../modifier_change/polygons_to_edges_mk2.html"><span class="doc">Polygon to Edges</span></a></p></li>
+<li><p>Beta Nodes-&gt; <a class="reference internal" href="../modifier_change/extrude_separate_lite.html"><span class="doc">Extrude Separate Faces Light</span></a></p></li>
+<li><p>Number-&gt; <a class="reference internal" href="../number/random_num_gen.html"><span class="doc">Random Num Gen</span></a></p></li>
+<li><p>MUL X, Y: Number-&gt; <a class="reference internal" href="../number/scalar_mk4.html"><span class="doc">Scalar Math</span></a></p></li>
+<li><p>List-&gt; <a class="reference internal" href="../list_masks/mask.html"><span class="doc">List Mask (Out)</span></a></p></li>
+<li><p>List-&gt;List Main-&gt; <a class="reference internal" href="../list_main/length.html"><span class="doc">List Length</span></a></p></li>
+<li><p>Matrix-&gt; <a class="reference internal" href="../matrix/matrix_in_mk4.html"><span class="doc">Matrix In</span></a></p></li>
+<li><p>Viz-&gt; <a class="reference internal" href="../viz/viewer_draw_mk4.html"><span class="doc">Viewer Draw</span></a></p></li>
+<li><p>Viz-&gt; <a class="reference internal" href="../viz/viewer_2d.html"><span class="doc">Viewer 2D</span></a></p></li>
+</ul>
+<p>Result:</p>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/14288520/190918333-c74ad35f-2002-4885-8bac-8c49900832ce.png"><img alt="https://user-images.githubusercontent.com/14288520/190918333-c74ad35f-2002-4885-8bac-8c49900832ce.png" src="https://user-images.githubusercontent.com/14288520/190918333-c74ad35f-2002-4885-8bac-8c49900832ce.png" /></a>
+<a class="reference external image-reference" href="https://user-images.githubusercontent.com/10011941/42779982-508f8026-8942-11e8-837e-a909fb784127.png"><img alt="https://user-images.githubusercontent.com/10011941/42779982-508f8026-8942-11e8-837e-a909fb784127.png" src="https://user-images.githubusercontent.com/10011941/42779982-508f8026-8942-11e8-837e-a909fb784127.png" /></a>
 </section>
 </section>
 
@@ -253,7 +294,7 @@ These are the vertices, edges and polygons of the hexagonal tiles centered on th
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2014...2022, sverchok team.</p>
+    <p>&#169; Copyright 2014...2024, sverchok team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
